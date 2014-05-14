@@ -13,3 +13,46 @@ Exercise 2
 
 - sum of bytes ändert sich nicht, wenn chars in Dateien exakt die gleichen sind, nur in
   anderer Reihenfolge
+
+
+Exercise 6
+==========
+
+Stopword-Liste: src/exercise_6/english.stop
+Quelle: http://jmlr.org/papers/volume5/lewis04a/a11-smart-stop-list/english.stop
+
+
+Problematische Worte mit Beispielqueries:
+(problematisch, wenn sie ignoriert werden)
+
+behind
+  star wars behind the scenes
+
+welcome
+  welcome present
+
+cause
+  cause of alcohol abuse
+
+changes
+  changes of birth rate
+
+greetings
+  birthday greetings
+
+hello
+  hello is it me you're looking for songtext
+
+is
+  all you need is love
+
+nine
+  nine inch nails
+
+without
+  cocktail without alcohol
+
+will
+  napoleon last will
+
+
