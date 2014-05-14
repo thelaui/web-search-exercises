@@ -1,0 +1,15 @@
+Exercise 1
+==========
+
+- klappt sehr gut für Nachrichtenseiten, wo content auf eine Stelle im Dokument fokussiert
+- Javascript-Code wird auch als content erkannt
+- explizite slope-Suche würde besser mit verteiltem content klar kommen
+
+Code siehe src/exercise_1/main.py
+
+
+Exercise 2
+==========
+
+- sum of bytes ändert sich nicht, wenn chars in Dateien exakt die gleichen sind, nur in
+  anderer Reihenfolge
