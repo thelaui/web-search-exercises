@@ -16,13 +16,19 @@ def stem(algo):
         word = re.sub("[\, \- \. \" \; \! \* \? \( \) \:]+", "", word.strip())
         if len(word) > 0:
             stem = stemmer.stemWord(word)
+            
+            print stem
+            
             stems.add(stem)
             total_count += 1
 
     file.close();
-
+    
+    #for stem in stems:
+    #    print stem
+        
     print algo, len(stems), total_count
 
 
-stem('english')
+#stem('english')
 stem('porter')
