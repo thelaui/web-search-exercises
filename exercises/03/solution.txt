@@ -1,0 +1,82 @@
+Exercise 1
+==========
+
++ Features für Dokumente können in Preprocessing berechnet werden
+
+- Features (insb. Quality Features) einer Anfrage schwer zu beurteilen, ohne den Informationsbedarf des Nutzers zu kennen
+
+
+Exercise 2
+==========
+
+define f(A,B,Q):
+  if R(Q, A) > R(Q, B)
+    return 1
+  else
+    return -1
+
+- Andersherum ist es nicht möglich, weil f(A,B,Q) nicht umkehrbar ist (von -1 und 1 kann man auf keinen konkreten Score schließen)
+
+Exercise 3
+==========
+
+- Vorzugsweise R(Q,D):
+- Konsistente Rankings zwischen Rechner bei f(A,B,Q) nicht gewährleistet
+- Dokumente müssen bei f(A,B,Q) im Schnitt öfter bewertet werden
+
+Exercise 4
+==========
+
+- Aufwand für Bearbeiten der Anfrage steigt linear mit Anzahl der Features
+
+Exercise 5
+==========
+
+- Top 10 im Ranking sind sehr wahrscheinlich inhaltlich sehr ähnlich (z.B. sogar on der gleichen Domain)
+- Diversifizierung um die Wahrscheinlichkeit zu erhöhen, dass der Informationsbedarf des Nutzers gedeckt wird
+
+Exercise 6
+==========
+
+- Tradeoff Time vs. Memory
+- Inverted Indexes sind schneller bei der Suche, weniger speichereffizient
+- Art der Suche entscheidend: Im Index sind 1- bis 2-Wort-Suchen unterstützt, bei grep will man i.d.R. mehr
+
+Exercise 7
+==========
+
+- Sehr klein: Pro wichtigem Wort nur speichern, in welchen Dokumenten es vorkommt
+- Für Städte: Städte als Known-Entities in den Index und speichern, in welchen Dokumenten sie vorkommen (evtl. mit Position)
+
+Exercise 8
+==========
+
+- Sequenz: 1
+- Original: 01
+- Compressed: 101
+=> 3 bit statt 2 bit
+
+Exercise 9
+==========
+
+- Damit die Gesamtgröße der Sequenz überhaupt reduziert werden kann, muss mindestens eine Zahl mit nur einem bit kodiert werden.
+- Dieses bit darf nicht Prefix anderer Kodierungen sein, um Ambiguität auszuschließen.
+=> Mindestens eine Zahl muss mit mehr als 2 bit kodiert
+=> Eine der vier Zahlen muss eine Sequenz sein, die unkomprimiert kürzer ist als komprimiert
+
+
+Exercise 10
+===========
+
+- Entropie der Quelle muss bekannt sein, nur dann können häufig auftretende Elemente auf weniger Speicherbedarf reduziert werden (Shannon)
+
+
+
+
+
+
+
+
+
+
+
