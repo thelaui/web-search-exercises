@@ -1,9 +1,11 @@
 Exercise 1
 ==========
 
-+ Features für Dokumente können in Preprocessing berechnet werden
++ Features für Dokumente können in Preprocessing berechnet werden (Query-Time-effizient)
++ Mathematische Betrachtung möglich -> klassische Operationen anwendbar
 
 - Features (insb. Quality Features) einer Anfrage schwer zu beurteilen, ohne den Informationsbedarf des Nutzers zu kennen
+- Schwer, gute (deskriptive) Features zu finden
 
 
 Exercise 2
@@ -17,23 +19,27 @@ define f(A,B,Q):
 
 - Andersherum ist es nicht möglich, weil f(A,B,Q) nicht umkehrbar ist (von -1 und 1 kann man auf keinen konkreten Score schließen)
 
+
 Exercise 3
 ==========
 
 - Vorzugsweise R(Q,D):
-- Konsistente Rankings zwischen Rechner bei f(A,B,Q) nicht gewährleistet
+- Konsistente Rankings zwischen Rechnern bei f(A,B,Q) nicht gewährleistet
 - Dokumente müssen bei f(A,B,Q) im Schnitt öfter bewertet werden
+
 
 Exercise 4
 ==========
 
 - Aufwand für Bearbeiten der Anfrage steigt linear mit Anzahl der Features
 
+
 Exercise 5
 ==========
 
 - Top 10 im Ranking sind sehr wahrscheinlich inhaltlich sehr ähnlich (z.B. sogar on der gleichen Domain)
 - Diversifizierung um die Wahrscheinlichkeit zu erhöhen, dass der Informationsbedarf des Nutzers gedeckt wird
+
 
 Exercise 6
 ==========
@@ -42,11 +48,13 @@ Exercise 6
 - Inverted Indexes sind schneller bei der Suche, weniger speichereffizient
 - Art der Suche entscheidend: Im Index sind 1- bis 2-Wort-Suchen unterstützt, bei grep will man i.d.R. mehr
 
+
 Exercise 7
 ==========
 
 - Sehr klein: Pro wichtigem Wort nur speichern, in welchen Dokumenten es vorkommt
 - Für Städte: Städte als Known-Entities in den Index und speichern, in welchen Dokumenten sie vorkommen (evtl. mit Position)
+
 
 Exercise 8
 ==========
@@ -55,6 +63,7 @@ Exercise 8
 - Original: 01
 - Compressed: 101
 => 3 bit statt 2 bit
+
 
 Exercise 9
 ==========
